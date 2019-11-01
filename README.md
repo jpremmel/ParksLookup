@@ -25,7 +25,7 @@ _The purpose of this project was to practice building an API with full CRUD (cre
 <img src="Parks-Swagger.png"
      alt="Screenshot of Swagger documentation for Parks API"
      style="float: center" 
-     height= "500" />  
+     height= "600" />  
 
 ## Technologies Used
 
