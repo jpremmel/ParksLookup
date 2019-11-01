@@ -31,5 +31,23 @@ namespace ParksMVC.Models
             Park park = JsonConvert.DeserializeObject<Park>(jsonResponse.ToString());
             return park;
         }
+
+        public static async Task<int> EditPark(Park park)
+        {
+            var apiCallTask = await ApiHelper.ApiCallEditPark(park);
+            return park.ParkId;
+        }
+
+        public static async Task<int> CreatePark(Park park)
+        {
+            var apiCallTask = await ApiHelper.ApiCallCreatePark(park);
+            return park.ParkId;
+        }
+
+        public static async Task<int> DeletePark(Park park)
+        {
+            var apiCallTask = await ApiHelper.ApiCallDeletePark(park);
+            return park.ParkId;
+        }
     }
 }
