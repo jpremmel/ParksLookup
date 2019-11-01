@@ -26,7 +26,7 @@ namespace ParksMVC.Controllers
         public async Task<IActionResult> Edit(Park park)
         {
             await Park.EditPark(park);
-            return RedirectToAction("Details", new { id = park.ParkId });
+            return RedirectToAction("Index", "Home");
         }
 
         public ActionResult Create()
@@ -37,8 +37,8 @@ namespace ParksMVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Park park)
         {
-            await Park.CreatePark(park);
-            return RedirectToAction("Details", new { id = park.ParkId });
+            int createdId = await Park.CreatePark(park);
+            return RedirectToAction("Index", "Home");
         }
 
         public async Task<IActionResult> Delete(int id)

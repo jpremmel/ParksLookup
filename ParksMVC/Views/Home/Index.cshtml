@@ -1,9 +1,15 @@
-﻿@using ParksMVC.Models
+﻿@{
+  Layout = "_Layout";
+}
+
+@using ParksMVC.Models
 @model List<ParksMVC.Models.Park>
 
-<h1>Parks</h1>>
+<h1>Parks</h1>
 
 @foreach(Park park in Model)
 {
     <p>@Html.ActionLink(@park.Name, "Details", "Parks", new { id = @park.ParkId })</p>
 }
+
+<button class="btn btn-success">@Html.ActionLink("Add Park", "Create", "Parks")</button>

@@ -23,7 +23,7 @@ namespace ParksMVC.Models
 
     public static async Task<string> ApiCallEditPark(Park park)
     {
-        RestClient client = new RestClient($"http://localhost:5000/api/parks{bagel.BagelId}");
+        RestClient client = new RestClient($"http://localhost:5000/api/parks{park.ParkId}");
         RestRequest request = new RestRequest("/", Method.PUT);
         request.AddJsonBody(park);
         var response = await client.ExecuteTaskAsync(request);
