@@ -6,7 +6,7 @@
 
 ## Description
 
-_The purpose of this project was to practice building an API with full CRUD (create, read, update, delete) functionality._
+_The purpose of this project was to practice building an API with full CRUD (create, read, update, and delete) functionality for state and national parks. Parks can be searched by name, location, terrain, and description._
 
 ## Setup/Installation Requirements
 
@@ -16,7 +16,12 @@ _The purpose of this project was to practice building an API with full CRUD (cre
 * _Run the command "dotnet restore"_
 * _Run the command "dotnet ef database update"_
 * _Run the command "dotnet watch run"_
-* _To see Swagger documentation, go to the URL "http://localhost:5000/swagger/" in a browser_
+* _To visit Swagger documentation, go to the URL "http://localhost:5000/swagger/" in a browser_  
+
+<img src="Parks-Swagger.png"
+     alt="Screenshot of Swagger documentation for Parks API"
+     style="float: center" 
+     height= "300" />  
 
 ## Technologies Used
 
