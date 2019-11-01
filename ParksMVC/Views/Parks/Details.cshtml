@@ -7,12 +7,9 @@
 <h1>@Model.Name</h1>
 
 <p>@Model.Location</p>
-<p>Area: @Model.SquareMileage</p>
+<p>Area: @Model.SquareMileage mi<sup>2</sup></p>
 <p>Terrain: @Model.Terrain</p>
 <p>@Model.Description</p>
-
-
-
 
 
 <button class="btn btn-success">@Html.ActionLink("Edit Park", "Edit", new { id = @Model.ParkId })</button>
