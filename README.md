@@ -29,7 +29,7 @@ _The purpose of this project was to practice building an API with full CRUD (cre
 
 ## Technologies Used
 
-_C#, ASP.NET Core MVC, MySQL, Entity, Swashbuckle/Swagger_
+_C#, ASP.NET Core MVC, MySQL, Entity, Swashbuckle/Swagger, CSS, Bootstrap, HTML_
 
 ### License
 
