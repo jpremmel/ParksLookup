@@ -16,7 +16,11 @@ _The purpose of this project was to practice building an API with full CRUD (cre
 * _Run the command "dotnet restore"_
 * _Run the command "dotnet ef database update"_
 * _Run the command "dotnet watch run"_
-* _To visit Swagger documentation, go to the URL "http://localhost:5000/swagger/" in a browser_  
+* _To visit Swagger documentation, go to the URL "http://localhost:5000/swagger/" in a browser_
+    * _GET request URL to get all parks: http://localhost:5000/api/Parks_
+    * _Example GET request URL to search for the park with the ID of 1: http://localhost:5000/api/Parks/1_
+    * _Example GET request URL to search for Yellowstone National Park: http://localhost:5000/api/Parks?name=Yellowstone_
+    * _Example GET request URL to search for "mountain" in the terrain field and "Alaska" in the location field: http://localhost:5000/api/Parks?location=Alaska&terrain=mountain_
 
 <img src="Parks-Swagger.png"
      alt="Screenshot of Swagger documentation for Parks API"
