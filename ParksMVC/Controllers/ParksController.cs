@@ -15,5 +15,37 @@ namespace ParksMVC.Controllers
             var park = Park.GetPark(id);
             return View(park);
         }
+
+        public ActionResult Edit(int id)
+        {
+            var park = Park.GetPark(id);
+            return View(park);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Park park)
+        {
+            await Park.EditPark(park);
+            return RedirectToAction("Details", new { id = park.ParkId });
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Park park)
+        {
+            await Park.CreatePark(park);
+            return RedirectToAction("Details", new { id = park.ParkId });
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var park = Park.GetPark(id);
+            await Park.DeletePark(park);
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
