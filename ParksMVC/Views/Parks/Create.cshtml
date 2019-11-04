@@ -2,7 +2,6 @@
   Layout = "_Layout";
 }
 
-@using ParksMVC.Models
 @model ParksMVC.Models.Park
 
 <h1>Add a park</h1>
@@ -20,5 +19,5 @@
   <br>
   @Html.Label("Description", "Description: ") @Html.TextAreaFor(model => model.Description, new { @class="form-control" })
   <br>
-  <input type="submit" value="Add Park" class="btn btn-success">
+  <input type="submit" value="Add Park" class="btn">
 }

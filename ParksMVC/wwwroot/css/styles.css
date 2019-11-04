@@ -1,3 +1,62 @@
 ﻿.form-control {
   width: 70%;
 }
+
+a {
+  color: #483D3C;
+}
+
+a:hover {
+  color: #a97555;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #483D3C;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 16px;
+  color: #f9ebc4;
+  font-size: 20px;
+  font-family: 'Overpass', sans-serif;
+}
+
+.navbar a:hover {
+  color: #483D3C;
+  background-color: #976648;
+}
+
+.active {
+  background-color: #a97555;
+}
+
+body {
+  background-color: #f9ebc4;
+}
+
+h1 {
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+}
+
+.btn {
+  background-color: #a7cf5d;
+  border-color: #483D3C;
+  border-width: 2px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+}
+
+.btn:hover {
+  border-color: #a97555;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}

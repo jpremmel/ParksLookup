@@ -9,7 +9,7 @@
 
 @foreach(Park park in Model)
 {
-    <p>@Html.ActionLink(@park.Name, "Details", "Parks", new { id = @park.ParkId })</p>
+    <h3>@Html.ActionLink(@park.Name, "Details", "Parks", new { id = @park.ParkId })</h3>
 }
 
-<button class="btn btn-success">@Html.ActionLink("Add Park", "Create", "Parks")</button>
+<button class="btn">@Html.ActionLink("Add Park", "Create", "Parks")</button>
