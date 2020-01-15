@@ -1,4 +1,4 @@
-# _Parks API_
+# Parks Lookup
 
 #### _An API for state and national parks, 1 Nov 2019_
 
@@ -6,12 +6,12 @@
 
 ## Description
 
-_The purpose of this project was to practice building an API with full CRUD (create, read, update, and delete) functionality for state and national parks. Parks can be searched by name, location, terrain, and description._
+The purpose of this project was to practice building an API with full CRUD (create, read, update, and delete) functionality for state and national parks. Parks can be searched by name, location, terrain, and description.
 
 ## Setup/Installation Requirements
 
 * _Clone this repository_
-* _Navigate to the main directory, "ParksLookup"_
+* _Navigate to the main directory, "parks-lookup"_
 * _Navigate to the API project directory, "Parks"_
 * _Run the command "dotnet restore"_
 * _Run the command "dotnet ef database update"_
